@@ -1,0 +1,10 @@
+function collectionefficiencygraphratios
+[D,CollectionEfficiency1]=laboratorycollectionefficiencyvssize;
+[D,CollectionEfficiency2]=prototypecollectionefficiencyvssize;
+mean_ratio_nogravity=mean(CollectionEfficiency1./CollectionEfficiency2)
+standard_deviation_nogravity= std(CollectionEfficiency1./CollectionEfficiency2)
+[D,CollectionEfficiency3]=scaled_collectionefficiencyvssize_gravity;
+[D,CollectionEfficiency4]=prototype_collectionefficiencyvssize_gravity;
+mean_ratio_gravity=mean(CollectionEfficiency3./CollectionEfficiency4)
+standard_deviation_gravity= std(CollectionEfficiency3./CollectionEfficiency4)
+end
